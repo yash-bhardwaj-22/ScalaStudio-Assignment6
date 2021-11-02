@@ -8,7 +8,9 @@ object Function extends App {
     override def apply(list: List[Int]): Int = list.sum
   }
   //val higherOrderFunction: (Int => Int, Int) => Int = (f: (Int => Int), num : Int) => f(num)
-  //val higherOrderFunction:
+  val higherOrderFunction: Function2[Int=>Int,Int,Int]= new Function2[Int=>Int,Int,Int] {
+    override def apply(f: Int => Int, num: Int): Int = f(num)
+  }
 
 }
 
