@@ -1,2 +1,2 @@
 # ScalaStudio-Assignment6
-# Functions
+Functions
