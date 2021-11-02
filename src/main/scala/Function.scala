@@ -9,11 +9,10 @@ object Function extends App {
   }
   //val higherOrderFunction: (Int => Int, Int) => Int = (f: (Int => Int), num : Int) => f(num)
   val higherOrderFunction: Function2[Int=>Int,Int,Int]= new Function2[Int=>Int,Int,Int] {
-    override def apply(f: Int => Int, num: Int): Int = f(num)
+    override def apply(higherOrderFunction: Int => Int, num: Int): Int = higherOrderFunction(num)
   }
 
 }
-
 
 
 
